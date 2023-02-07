@@ -12,7 +12,7 @@ from pretrian_task import BERT_Model
 from model import get_tokens_and_segments
 from dataset import load_data_wiki
 d2l = sys.modules[__name__]
-
+# 增加一些备注
 def try_all_gpus():
     """返回所有可用的GPU， 如果没有GPU，则返回[cpu(),]"""
     devices = [torch.device(f'cuda:{i}')
